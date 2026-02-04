@@ -1,0 +1,29 @@
+Day – 3
+
+#	What is Git/ GitHub / GitLab
+1. Git
+•	Definition: A distributed version control system created by Linus Torvalds in 2005.
+•	Purpose: Tracks changes in source code, allows multiple developers to work together without overwriting each other’s work.
+2. GitHub
+•	Definition: A cloud-based platform owned by Microsoft that hosts Git repositories.
+•	Purpose: Makes collaboration easier by providing a central place to store, share, and review code.
+3. GitLab
+•	Definition: An open-source DevOps platform that also hosts Git repositories.
+•	Purpose: Provides a complete software development lifecycle in one application.
+
+ #Git command                                                                                                                              
+o	git add . → Stages all changes in the current directory for commit.
+o	git commit -m "message" → Saves staged changes with a descriptive message.
+o	git push → Uploads local commits to the remote repository.
+o	git pull → Fetches and merges changes from the remote repository into your branch.
+o	git branch → Lists, creates, or deletes branches.
+o	git fetch → Downloads changes from remote without merging them.
+o	git stash → Temporarily saves uncommitted changes for later use.
+o	git checkout → Switches branches or restores files.
+o	git checkout(branchout) → Switches to the specified branch.
+
+#Python Virtual Environment Commands
+•	python -m venv venv → Creates a virtual environment named venv.
+•	python -m venv shakthi → Creates a virtual environment named shakthi.
+•	shakthi/Scripts/activate → Activates the shakthi virtual environment.
+•	deactivate → Exits the current virtual environment.
