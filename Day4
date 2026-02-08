@@ -1,0 +1,41 @@
+DAY 4
+
+SDLC: The Software Development Life Cycle (SDLC) is a structured process that defines the stages of planning, designing, building, testing, deploying, and maintaining software to ensure quality and efficiency.
+SDLC role:
+1. Functional Consultant / Business Analyst → Translates business needs into clear technical requirements for the development team.
+2. Developer / Programmer → Designs and writes code to build the software according to specifications.
+3. Tester / QA Team → Ensures software quality by detecting bugs and verifying functionality through testing.
+4. Administration Team → Manages system infrastructure, databases, and environments to support development and deployment.
+5. Project / Product Manager → Oversees planning, execution, and delivery while balancing scope, time, and resources.
+6. Sales and Marketing → Promotes the product, drives adoption, and gathers customer feedback for improvements.
+7. Human Resources → Handles recruitment, training, and team management to ensure the right talent supports the project.
+8. Documentation Team → Creates user manuals, technical guides, and process documents for clarity and compliance.
+9. Support Team → Provides ongoing assistance, troubleshooting, and maintenance after the product is deployed.
+
+ 	SDLC Models
+  1.Waterfall Model
+A linear, sequential approach where each phase (requirements → design → coding → testing → deployment → maintenance) must be completed before moving to the next. A rigid, step‑by‑step process where each phase must finish before the next begins.
+
+ 
+2.Agile Method
+An incremental and flexible approach emphasizing collaboration, customer feedback, and rapid delivery through sprints.
+Agile Roles:
+1.  Product Owner
+•	Defines the product vision and goals.
+•	Manages and prioritizes the product backlog.
+•	Acts as the bridge between stakeholders and the development team.
+•	Ensures maximum business value is delivered.
+
+2. Scrum Master
+•	Facilitates Scrum ceremonies (daily stand‑ups, sprint planning, reviews, retrospectives).
+•	Removes obstacles that block the team’s progress.
+•	Coaches the team on Agile principles and practices.
+•	Protects the team from external distractions.
+
+3.   Development Team
+•	Cross functional group (developers, testers, designers, etc.).
+•	Self organizes to plan and execute sprint tasks.
+•	Designs, codes, tests, and delivers working software increments.
+•	Ensures quality and continuous improvement.
+
+
