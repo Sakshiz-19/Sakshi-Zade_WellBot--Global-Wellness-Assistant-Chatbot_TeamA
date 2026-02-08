@@ -1,0 +1,97 @@
+DAY 5
+
+# What is API
+An API (Application Programming Interface) is a set of rules that allows different software applications to communicate with each other, exchange data, and use each other’s functionality without needing to know the internal details of how they work. In simple terms, it acts like a messenger that takes a request from one program, delivers it to another, and returns the response.
+Types of APIs
+               1.Web APIs: Allow communication over the internet using protocols like HTTP.                                                                                                                REST, GraphQL are the examples of web apis.
+2.Library APIs: Expose functions of a software library. Java API, Python NumPy API are the examples of library apis.
+3.Operating System APIs: Provide access to OS-level functions. Windows API, POSIX are the examples of os apis.
+4.Hardware APIs: Enable software to interact with hardware devices. Camera API, Printer API are the examples of hardware apis.
+
+APIs are like the bridge or messenger that ensures smooth communication between the two sides.
+
+ #	How APIs Connect Frontend and Backend
+•	Frontend (Client side)
+o	Built with HTML, CSS, JavaScript, React, etc.
+o	Handles user interface and interactions.
+o	Example: A user clicks “Login” on a website.
+•	API (Middle layer)
+o	Receives the request from the frontend.
+o	Defines how the frontend can talk to the backend (rules, endpoints, data formats).
+o	Example: The login button triggers an API call like POST /login with username and password.
+•	Backend (Server side)
+o	 Built with Node.js, Java, Python, etc.
+o	Contains business logic, database queries, authentication. Example: The backend checks credentials in the database and sends a response back via the API.
+ 	What is a Frontend Payload?
+•	A payload is simply the body of the request that carries the actual data.
+•	In frontend-to-backend communication, the payload is usually sent in JSON format via HTTP methods like POST, PUT, or PATCH.
+•	It contains the information the backend needs to process the request.
+ #	What is Python:
+Python is a high-level, general-purpose programming language created by Guido van Rossum in 1991. It’s one of the most popular languages today because of its simplicity, readability, and versatility.
+Python is used in Flask to build lightweight web applications and APIs by defining routes and handling requests, while in FastAPI it powers high performance, modern APIs with automatic validation, async support, and auto generated documentation.
+
+ #	What is FAST API
+Fast API is a modern, high-performance web framework for building APIs with Python. It’s designed to be fast, easy to use, and developer-friendly.
+ 	Key Features of FastAPI
+•	Speed: Built on top of Starlette (for web handling) and Pydantic (for data validation), making it one of the fastest Python frameworks.
+•	Automatic validation: Uses Python type hints to validate request and response data automatically.
+•	Interactive docs: Generates Swagger UI and ReDoc documentation automatically, so you can test APIs in the browser.
+•	Asynchronous support: Works seamlessly with async and await for high-performance applications.
+•	Ease of use: Minimal boilerplate code compared to frameworks like Flask or Django.
+Example:
+from fastapi import FastAPI
+app = FastAPI()
+@app.get("/")
+def read_root():
+return {"message": "Hello, World!"}
+@app.get("/items/{item_id}")
+def read_item(item_id: int, q: str = None):
+return {"item_id": item_id, "q": q}
+
+ #	What is Flask API
+A Flask API is an API built using Flask, which is a lightweight Python web framework. Flask is often chosen when developers want simplicity, flexibility, and quick prototyping without the overhead of larger frameworks like Django.
+ 	Key Features of Flask
+•	Minimal & lightweight: Provides only the essentials, letting you add extensions as needed.
+•	Flexible: You decide the architecture and components.
+•	Easy to learn: Great for beginners and small projects.
+•	WSGI-based: Works well with Python’s web server gateway interface.
+Example :
+from flask import Flask, request, jsonify
+app = Flask(__name__)
+# Root endpoint
+@app.route('/')
+def home():
+    return jsonify({"message": "Hello, World!"})
+# Example API endpoint
+@app.route('/items/<int:item_id>', methods=['GET'])
+def get_item(item_id):
+    return jsonify({"item_id": item_id, "status": "success"})
+# Example POST endpoint with payload
+@app.route('/login', methods=['POST'])
+def login():
+    data = request.get_json()
+    username = data.get("username")
+    password = data.get("password")
+    return jsonify({"username": username, "authenticated": True})
+if __name__ == '__main__':
+    app.run(debug=True)
+  Fast API / Flask API → These are two different Python frameworks used to build web applications and APIs.
+•	from flask import Flask → Imports the Flask class from the Flask library so you can create a web app.
+•	app = Flask(__name__) → Creates a Flask application object named app that will handle requests and responses.
+•	@app.route("project/firstendpoint") → Defines a route (URL endpoint) so when someone visits that path, a function will run.
+•	from flask import Flask, request, jsonify → Imports additional tools: request to handle incoming data and jsonify to send JSON responses.
+•	 Flask --- create app → A reminder that Flask is used to create and run the web application.
+•	•  Request -- read data payload → The request object lets you access incoming data sent by the client (like form data or JSON).
+•	Jsonify -- send json response → The jsonify function converts Python data into proper JSON format for API responses.
+•	FAST API → FastAPI is a modern, advanced framework compared to Flask.
+•	Advanced one compared to flask → FastAPI offers built in validation, async support, and automatic documentation.
+•	Async functions → FastAPI supports asynchronous functions (async def) for handling multiple requests efficiently.
+•	From fastapi import FastAPI → This imports the FastAPI class to create an application.
+•	•  App = FastAPI{ → This looks like a typo; it should be App = FastAPI() to correctly create the FastAPI application object.
+•	App = FastAPI() → Initializes a FastAPI application named app that will handle requests and responses.
+•	@app.get() → Defines a GET endpoint (route) so when a client sends a GET request, the associated function runs.
+•	https → Refers to secure communication over the web using HTTPS protocol.
+•	Websocket → FastAPI supports WebSockets, which allow real time, two way communication between client and server.
+
+
+
