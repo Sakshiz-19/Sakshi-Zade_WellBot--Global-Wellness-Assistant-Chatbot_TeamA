@@ -1,0 +1,7 @@
+[
+  "test_chatbot.py::TestWellnessChatbot::test_aiml_response",
+  "test_chatbot.py::TestWellnessChatbot::test_chat_endpoint_exists",
+  "test_chatbot.py::TestWellnessChatbot::test_ollama_response",
+  "test_chatbot.py::TestWellnessChatbot::test_safety_check",
+  "test_chatbot.py::TestWellnessChatbot::test_safety_endpoint"
+]
